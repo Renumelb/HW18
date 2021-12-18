@@ -12,7 +12,7 @@
 9. [Step 7: Perform transaction in Metamask](#Paragraph8) 
 
 ## Introduction <a name="Introduction"></a>
-ZBank, a small, innovative bank that is interested in exploring what blockchain technology can do for them and their customers. This document explains how to set up a private testnet that our developers can use to explore potentials for blockchain at ZBank using Proof of Authority consensus.
+ZBank, a small, innovative bank that is interested in exploring what blockchain technology can do for them and their customers. This document explains how to set up a private testnet that the developers can use to explore potentials for blockchain at ZBank using Proof of Authority consensus.
 
 This private testnet will allow:
 - The developers to experiment as there are no real monetary transactions involved.
@@ -40,6 +40,7 @@ We will use pre-configured and pre funded accounts and nodes.
 
 Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses. We need to create accounts for two nodes for the network with a separate datadir for each using geth per commands below. 
 ./geth --datadir node1 account new
+
 ./geth --datadir node2 account new
 
 Node 1: Create the private and public keys. Please do not disclose the password or secret key. Please make note of the passwords and public address of the key as we will need these to configure the genesis and activate the blockchain.
