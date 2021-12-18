@@ -45,7 +45,8 @@ Because the accounts must be approved, we will generate two new nodes with new a
 
 Node 1: Create the private and public keys. Please do not disclose the password or secret key. Please make note of the passwords and public address of the key as we will need these to configure the genesis and activate the blockchain.
 
-Also make note of node 1 enode address.This will be used to set up node2 for mining.
+![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/Finalgenesis.PNG)
+
 
 Repeat the same process for the second node by replacing the datadir parameter with the node2 folder.Create the private and public keys. Please do not disclose the password or secret key.
 
@@ -83,7 +84,7 @@ The nodes can now be used to begin mining blocks.Run the nodes in separate termi
 ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
 ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
-where SEALER ADDRESS is the public address of each node (Step 1) and the SEALER_ONE_ENODE_ADDRESS is the em=node address that was generated when the first node was set to mine.
+where SEALER ADDRESS is the public address of each node (Step 1) and the SEALER_ONE_ENODE_ADDRESS is the em=node address that was generated when the first node was set to mine. Therefore please make note of node 1 enode address.
 
 NOTE: You will need to enter the node your password (Refer step 1) for each node to commence mining.
 
