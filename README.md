@@ -56,12 +56,9 @@ The genesis block is the first step towards creating our very own new blockchain
 
 Create a network with name 'finalnet'. Configure the new genesis option from from scratch. Choose Clique- Proof of Authority consensus. Enter the public addresses of the two nodes created in Step 1 (without 0x) to seal. Also enter the same two public addresses to pre-fund the account. The chain ID must be set to 333.
 
-
-
-
+![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/Finalgenesis.PNG)
 
 Please export the genesis configuration. This will export the finalnet.json file.
- 
 
 
 
@@ -78,9 +75,7 @@ With the genesis block creation completed, we will now initialize the nodes with
 ./geth --datadir node2 init finalnet.json
 
 
-
 ## Step 4: Activate Blockchain <a name="paragraph5"></a>
-
 
 The nodes can now be used to begin mining blocks.Run the nodes in separate terminal windows with the commands:
 
@@ -91,25 +86,45 @@ where SEALER ADDRESS is the public address of each node (Step 1) and the SEALER_
 
 NOTE: You will need to enter the node your password (Refer step 1) for each node to commence mining.
 
+![Mining Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node1mining.PNG)
+![Mining Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node2mining.PNG)
+
+![Metamask Account- ETH mined Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamask%20node1.PNG)
+![Metamask Account- ETH mined Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamasknode2.PNG)
 
 ## Step 5: Metamask account- Connect nodes  <a name="paragraph6"></a>
 
 
 Please import the node keys into Metamask so that the mined ETH can be received into your account. To do this, please select the "Import" option as below.
 
+![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport1.PNG)
+
 
 
 
 Then select json file from the dropdown and navigate to the folder where the nodes have been created. Select the key stored in the "Keystore" folder and enter the node password as set up in Step 1. Repeat the same for node 2.
 
+![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport(2.PNG)
+
+
+![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskimport3.PNG)
 
 ## Step 6: Metamask account- Add new genesis network finalnet  <a name="paragraph7"></a>
 
 To set the network to configured genesis, finalnet, please execute following steps:
 
+![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskaddnetwork1.PNG)
+
+![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskaddnetwork2.PNG)
+
 
 ## Step 7: Perform transaction in Metamask  <a name="paragraph8"></a>
 
-We will now send 21534 wei from Node 1 to Node 2.
+We will now send 245678 wei from Node 1 to Node 2.
+![Metamask- Perform transaction](https://github.com/Renumelb/HW18/blob/main/Screenshots/Send%20txn.PNG)
+
+
+
+
 
 
