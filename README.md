@@ -45,7 +45,7 @@ Because the accounts must be approved, we will generate two new nodes with new a
 
 Node 1: Create the private and public keys. Please do not disclose the password or secret key. Please make note of the passwords and public address of the key as we will need these to configure the genesis and activate the blockchain.
 
-![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node%20creation.PNG)
+![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/Finalgenesis.PNG)
 
 
 Repeat the same process for the second node by replacing the datadir parameter with the node2 folder.Create the private and public keys. Please do not disclose the password or secret key.
