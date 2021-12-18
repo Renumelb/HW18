@@ -71,20 +71,25 @@ Please export the genesis configuration. This will export the finalnet.json file
 
 ## Step 3: Initialising the nodes <a name="paragraph4"></a>
 
-With the genesis block creation completed, we will now initialize the nodes with the genesis finalnet.json file. Using geth, initialize each node  as below:
+With the genesis block creation completed, we will now initialize the nodes with the genesis finalnet.json file. Using geth, initialize each node  as below. .
 
 ./geth --datadir node1 init finalnet.json
+
 ./geth --datadir node2 init finalnet.json
+
+You will get confirmation as below:
+![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/node%20initilisation.PNG)
 
 
 ## Step 4: Activate Blockchain <a name="paragraph5"></a>
 
 The nodes can now be used to begin mining blocks.Run the nodes in separate terminal windows with the commands:
 
-./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
+./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock (Please make note of node 1 enode address)
 ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
-where SEALER ADDRESS is the public address of each node (Step 1) and the SEALER_ONE_ENODE_ADDRESS is the em=node address that was generated when the first node was set to mine. Therefore please make note of node 1 enode address.
+where SEALER ADDRESS is the public address of each node (refer Step 1) and
+the SEALER_ONE_ENODE_ADDRESS is the enode address that was generated when node 1 was set to mine.
 
 NOTE: You will need to enter the node your password (Refer step 1) for each node to commence mining.
 
