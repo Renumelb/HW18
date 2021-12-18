@@ -1,0 +1,34 @@
+=============== Dec 18, 2021 (AEDT) ===============
+15:59:58.003002 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:59:58.005987 db@open opening
+15:59:58.006986 version@stat F·[] S·0B[] Sc·[]
+15:59:58.008979 db@janitor F·2 G·0
+15:59:58.008979 db@open done T·1.9931ms
+16:59:58.019377 memdb@flush N·35417 S·3MiB
+16:59:58.037326 memdb@flush created L0@3 N·35417 S·688KiB "loc..seq,v25":"version,v1"
+16:59:58.038325 version@stat F·[1] S·688KiB[688KiB] Sc·[0.25]
+16:59:58.039321 memdb@flush committed F·1 T·19.9441ms
+16:59:58.040320 journal@remove removed @1
+=============== Dec 19, 2021 (AEDT) ===============
+08:21:58.024533 memdb@flush N·34402 S·3MiB
+08:21:58.040490 memdb@flush created L0@5 N·34402 S·636KiB "loc..seq,v41393":"n:\xff..ail,v59977"
+08:21:58.040490 version@stat F·[2] S·1MiB[1MiB] Sc·[0.50]
+08:21:58.041487 memdb@flush committed F·1 T·16.9542ms
+08:21:58.042485 journal@remove removed @2
+08:22:24.384779 table@compaction L0·2 -> L1·0 S·1MiB Q·70071
+08:22:24.420690 table@build created L1@6 N·12185 S·481KiB "loc..seq,v41393":"version,v1"
+08:22:24.420690 version@stat F·[0 1] S·481KiB[0B 481KiB] Sc·[0.00 0.00]
+08:22:24.421686 table@compaction committed F-1 S-843KiB Ke·0 D·57634 T·36.9076ms
+08:22:24.422682 table@remove removed @5
+08:22:24.422682 table@remove removed @3
+09:04:58.021273 memdb@flush N·34334 S·3MiB
+09:04:58.036229 memdb@flush created L0@8 N·34334 S·626KiB "n:\x00..ing,v93846":"n:\xfe..ong,v79007"
+09:04:58.036229 version@stat F·[1 1] S·1MiB[626KiB 481KiB] Sc·[0.25 0.00]
+09:04:58.037227 memdb@flush committed F·1 T·15.9538ms
+09:04:58.127986 journal@remove removed @4
+09:05:26.311327 table@compaction L0·1 -> L1·1 S·1MiB Q·104448
+09:05:26.331492 table@build created L1@9 N·16514 S·652KiB "loc..seq,v41393":"version,v1"
+09:05:26.331492 version@stat F·[0 1] S·652KiB[0B 652KiB] Sc·[0.00 0.01]
+09:05:26.332346 table@compaction committed F-1 S-455KiB Ke·0 D·30005 T·21.0196ms
+09:05:26.332346 table@remove removed @8
+09:05:26.333343 table@remove removed @6
