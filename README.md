@@ -38,7 +38,7 @@ We will use pre-configured and pre funded accounts and nodes.
 
 ## Step 1: Create nodes <a name="paragraph2"></a>
 
-Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses. We need to create accounts for two nodes for the network with a separate datadir for each using geth per commands below. 
+Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as the pre-approved sealer addresses. We need to create accounts for two nodes for the network with a separate datadir for each using geth per commands below. 
 ./geth --datadir node1 account new
 
 ./geth --datadir node2 account new
@@ -48,13 +48,13 @@ Node 1: Create the private and public keys. Please do not disclose the password 
 ![New node creation](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node%20creation.PNG)
 
 
-Repeat the same process for the second node by replacing the datadir parameter with the node2 folder.Create the private and public keys. Please do not disclose the password or secret key.
+Repeat the same process for the second node by replacing the datadir parameter with the node2 folder. Create the private and public keys. Please do not disclose the password or secret key.
 
 
 ## Step 2: Creating a Genesis Block <a name="paragraph3"></a>
 
 
-The genesis block is the first step towards creating our very own new blockchain. Open a terminal window, navigate to the folder where Go Etheruem has been installed (Blockchain-Tools/geth folder) and type the command ./puppeth.
+The genesis block is the first step towards creating our very own new blockchain. Open a terminal window, navigate to the folder where Go Etheruem has been installed and type the command ./puppeth.
 
 Create a network with name 'finalnet'. Configure the new genesis option from from scratch. Choose Clique- Proof of Authority consensus. Enter the public addresses of the two nodes created in Step 1 (without 0x) to seal. Also enter the same two public addresses to pre-fund the account. The chain ID must be set to 333.
 
@@ -63,15 +63,12 @@ Create a network with name 'finalnet'. Configure the new genesis option from fro
 Please export the genesis configuration. This will export the finalnet.json file.
 
 
-
-
-
-.
+![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/finalnetjason.PNG)
 
 
 ## Step 3: Initialising the nodes <a name="paragraph4"></a>
 
-With the genesis block creation completed, we will now initialize the nodes with the genesis finalnet.json file. Using geth, initialize each node  as below. .
+With the genesis block creation completed, we will now initialize the nodes with the genesis finalnet.json file. Using geth commands, initialize each node.
 
 ./geth --datadir node1 init finalnet.json
 
@@ -83,7 +80,7 @@ You will get confirmation as below:
 
 ## Step 4: Activate Blockchain <a name="paragraph5"></a>
 
-The nodes can now be used to begin mining blocks.Run the nodes in separate terminal windows with the commands:
+The nodes can now be used to begin mining blocks. Run the nodes in separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock (Please make note of node 1 enode address)
 ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
@@ -91,7 +88,7 @@ The nodes can now be used to begin mining blocks.Run the nodes in separate termi
 where SEALER ADDRESS is the public address of each node (refer Step 1) and
 the SEALER_ONE_ENODE_ADDRESS is the enode address that was generated when node 1 was set to mine.
 
-NOTE: You will need to enter the node your password (Refer step 1) for each node to commence mining.
+NOTE: You will need to enter the node password (Refer step 1) for each node to commence mining.
 
 ![Mining Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node1mining.PNG)
 ![Mining Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node2mining.PNG)
@@ -102,11 +99,9 @@ NOTE: You will need to enter the node your password (Refer step 1) for each node
 ## Step 5: Metamask account- Connect nodes  <a name="paragraph6"></a>
 
 
-Please import the node keys into Metamask so that the mined ETH can be received into your account. To do this, please select the "Import" option as below.
+Please import the node keys into Metamask so that the mined ETH can be received into your account. To do this, please select the "Import" option and follow next steps.
 
 ![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport1.PNG)
-
-
 
 
 Then select json file from the dropdown and navigate to the folder where the nodes have been created. Select the key stored in the "Keystore" folder and enter the node password as set up in Step 1. Repeat the same for node 2.
@@ -116,16 +111,17 @@ Then select json file from the dropdown and navigate to the folder where the nod
 
 ![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskimport3.PNG)
 
+
 ## Step 6: Metamask account- Add new genesis network finalnet  <a name="paragraph7"></a>
 
-To set the network to configured genesis, finalnet, please execute following steps:
+To set the Metamask network to the configured genesis, finalnet, please execute following steps:
 
 ![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskaddnetwork1.PNG)
 
 ![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskaddnetwork2.PNG)
 
 
-## Step 7: Perform transaction in Metamask  <a name="paragraph8"></a>
+## Step 7: Perform a transaction in Metamask  <a name="paragraph8"></a>
 
 We will now send 245678 wei from Node 1 to Node 2.
 ![Metamask- Perform transaction](https://github.com/Renumelb/HW18/blob/main/Screenshots/Send%20txn.PNG)
