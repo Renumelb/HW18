@@ -3,13 +3,13 @@
 # Table of Contents
 1. [Introduction](#Introduction)
 2. [Pre requisites](#Paragraph1)
-3. [Step 1: Create nodes](#Paragraph2)
+3. [Step 1: Create Nodes](#Paragraph2)
 4. [Step 2: Creating a Genesis Block](#Paragraph3) 
-5. [Step 3: Initialising the nodes](#Paragraph4) 
+5. [Step 3: Initialise the Nodes](#Paragraph4) 
 6. [Step 4: Activate Blockchain](#Paragraph5) 
-7. [Step 5: Metamask account- Connect nodes](#Paragraph6) 
-8. [Step 6: Metamask account- Add new genesis network finalnet](#Paragraph7) 
-9. [Step 7: Perform transaction in Metamask](#Paragraph8) 
+7. [Step 5: Metamask Account- Connect nodes](#Paragraph6) 
+8. [Step 6: Metamask Account- Add new genesis network finalnet](#Paragraph7) 
+9. [Step 7: Perform Transaction in Metamask](#Paragraph8) 
 
 ## Introduction <a name="Introduction"></a>
 ZBank, a small, innovative bank that is interested in exploring what blockchain technology can do for them and their customers. This document explains how to set up a private testnet that the developers can use to explore potentials for blockchain at ZBank using Proof of Authority consensus.
@@ -36,7 +36,7 @@ In order to set up a working blockchain testnet, we will need:
 
 We will use pre-configured and pre funded accounts and nodes.
 
-## Step 1: Create nodes <a name="paragraph2"></a>
+## Step 1: Create Nodes <a name="paragraph2"></a>
 
 Because the accounts must be approved, we will generate two new nodes with new account addresses that will serve as the pre-approved sealer addresses. We need to create accounts for two nodes for the network with a separate datadir for each using geth per commands below. 
 ./geth --datadir node1 account new
@@ -66,7 +66,7 @@ Please export the genesis configuration. This will export the finalnet.json file
 ![New Genesis-creation finalnet](https://github.com/Renumelb/HW18/blob/main/Screenshots/finalnetjason.PNG)
 
 
-## Step 3: Initialising the nodes <a name="paragraph4"></a>
+## Step 3: Initialise the Nodes <a name="paragraph4"></a>
 
 With the genesis block creation completed, we will now initialize the nodes with the genesis finalnet.json file. Using geth commands, initialize each node.
 
@@ -105,7 +105,7 @@ Receipt of wei in Metamask account for node 2:
 
 ![Metamask Account- ETH mined Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamasknode2.PNG)
 
-## Step 5: Metamask account- Connect nodes  <a name="paragraph6"></a>
+## Step 5: Metamask Account- Connect nodes  <a name="paragraph6"></a>
 
 
 Please import the node keys into Metamask so that the mined ETH can be received into your account. To do this, please select the "Import" option and follow next steps.
@@ -123,7 +123,7 @@ Select the key stored in the "Keystore" folder and enter the node password as se
 
 Please ensure that you have imported keys for both nodes.
 
-## Step 6: Metamask account- Add new genesis network finalnet  <a name="paragraph7"></a>
+## Step 6: Metamask Account- Add new genesis network finalnet  <a name="paragraph7"></a>
 
 To set the Metamask network to the configured genesis, finalnet, please execute following steps:
 
@@ -136,7 +136,7 @@ Enter details of finalnet:
 ![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskaddnetwork2.PNG)
 
 
-## Step 7: Perform a transaction in Metamask  <a name="paragraph8"></a>
+## Step 7: Perform a Transaction in Metamask  <a name="paragraph8"></a>
 
 We will now send 245678 wei from Node 1 to Node 2.
 
