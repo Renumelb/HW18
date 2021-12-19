@@ -97,7 +97,12 @@ Node 2
 
 ![Mining Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node2mining.PNG)
 
+Receipt of wei in Metamask account for node 1:
+
 ![Metamask Account- ETH mined Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamask%20node1.PNG)
+
+Receipt of wei in Metamask account for node 2:
+
 ![Metamask Account- ETH mined Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamasknode2.PNG)
 
 ## Step 5: Metamask account- Connect nodes  <a name="paragraph6"></a>
