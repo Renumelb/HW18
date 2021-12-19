@@ -89,8 +89,12 @@ where SEALER ADDRESS is the public address of each node (refer Step 1) and
 the SEALER_ONE_ENODE_ADDRESS is the enode address that was generated when node 1 was set to mine.
 
 NOTE: You will need to enter the node password (Refer step 1) for each node to commence mining.
+Node 1
 
 ![Mining Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node1mining.PNG)
+
+Node 2
+
 ![Mining Node 2](https://github.com/Renumelb/HW18/blob/main/Screenshots/Node2mining.PNG)
 
 ![Metamask Account- ETH mined Node 1](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamask%20node1.PNG)
@@ -104,19 +108,25 @@ Please import the node keys into Metamask so that the mined ETH can be received 
 ![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport1.PNG)
 
 
-Then select json file from the dropdown and navigate to the folder where the nodes have been created. Select the key stored in the "Keystore" folder and enter the node password as set up in Step 1. Repeat the same for node 2.
+Then select json file from the dropdown and navigate to the folder where the nodes have been created. 
 
 ![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport(2.PNG)
 
+Select the key stored in the "Keystore" folder and enter the node password as set up in Step 1
 
 ![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskimport3.PNG)
 
+Please ensure that you have imported keys for both nodes.
 
 ## Step 6: Metamask account- Add new genesis network finalnet  <a name="paragraph7"></a>
 
 To set the Metamask network to the configured genesis, finalnet, please execute following steps:
 
+Select add network:
+
 ![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/metamaskaddnetwork1.PNG)
+
+Enter details of finalnet:
 
 ![Metamask- Add network](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskaddnetwork2.PNG)
 
@@ -124,10 +134,6 @@ To set the Metamask network to the configured genesis, finalnet, please execute 
 ## Step 7: Perform a transaction in Metamask  <a name="paragraph8"></a>
 
 We will now send 245678 wei from Node 1 to Node 2.
+
 ![Metamask- Perform transaction](https://github.com/Renumelb/HW18/blob/main/Screenshots/Send%20txn.PNG)
-
-
-
-
-
 
