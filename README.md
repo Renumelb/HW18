@@ -4,7 +4,7 @@
 1. [Introduction](#Introduction)
 2. [Pre requisites](#Paragraph1)
 3. [Step 1: Create Nodes](#Paragraph2)
-4. [Step 2: Creating a Genesis Block](#Paragraph3) 
+4. [Step 2: Create a Genesis Block](#Paragraph3) 
 5. [Step 3: Initialise the Nodes](#Paragraph4) 
 6. [Step 4: Activate Blockchain](#Paragraph5) 
 7. [Step 5: Metamask Account- Connect nodes](#Paragraph6) 
@@ -51,7 +51,7 @@ Node 1: Create the private and public keys. Please do not disclose the password 
 Repeat the same process for the second node by replacing the datadir parameter with the node2 folder. Create the private and public keys. Please do not disclose the password or secret key.
 
 
-## Step 2: Creating a Genesis Block <a name="paragraph3"></a>
+## Step 2: Create a Genesis Block <a name="paragraph3"></a>
 
 
 The genesis block is the first step towards creating our very own new blockchain. Open a terminal window, navigate to the folder where Go Etheruem has been installed and type the command ./puppeth.
