@@ -115,7 +115,7 @@ Please import the node keys into Metamask so that the mined ETH can be received 
 
 Then select json file from the dropdown and navigate to the folder where the nodes have been created. 
 
-![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport(2.PNG)
+![Metamask- Import Account- Node keys](https://github.com/Renumelb/HW18/blob/main/Screenshots/Metamaskimport2.PNG)
 
 Select the key stored in the "Keystore" folder and enter the node password as set up in Step 1
 
